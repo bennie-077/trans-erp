@@ -1,0 +1,63 @@
+.datatable {
+    height: 75vh;
+    padding: 20px;
+  
+    .datatableTitle {
+      width: 100%;
+      font-size: 24px;
+      color: gray;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .link {
+        text-decoration: none;
+        color: goldenrod;
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid goldenrod;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  
+    .truckCellStatus {
+      padding: 5px;
+      border-radius: 5px;
+  
+      &.active {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.096);
+      }
+  
+      &.inactive {
+        color: crimson;
+        background-color: rgba(220, 20, 60, 0);
+      }
+    }
+  
+    .cellAction {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  
+      .viewButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: darkblue;
+        border: 1px dotted rgba(0, 0, 139, 0.479);
+        cursor: pointer;
+      }
+  
+      .deleteButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: crimson;
+        border: 1px dotted rgba(220, 20, 60, 0.603);
+        cursor: pointer;
+      }
+    }
+  }
+  

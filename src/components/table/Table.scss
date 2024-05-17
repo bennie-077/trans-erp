@@ -1,0 +1,21 @@
+.table {
+    .status {
+      padding: 5px;
+      border-radius: 5px;
+  
+      &.Ongoing {
+        color: red;
+        background-color: rgba(255, 0, 0, 0.158);
+      }
+  
+      &.Offloaded {
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.233);
+      }
+  
+      &.Completed {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.192);
+      }
+    }
+  }  
