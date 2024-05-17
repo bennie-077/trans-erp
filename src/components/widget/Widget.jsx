@@ -6,6 +6,8 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CircleIcon from "@mui/icons-material/Circle";
 import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
 import AnnouncementIcon from "@mui/icons-material/Announcement";
+import SailingIcon from "@mui/icons-material/Sailing";
+import ScheduleIcon from "@mui/icons-material/Schedule";
 
 const Widget = ({ type }) => {
   let data;
@@ -32,15 +34,15 @@ const Widget = ({ type }) => {
       break;
     case "live":
       data = {
-        title: "ON ROAD",
+        title: "SHIPMENTS",
         isMoney: false,
-        link: "View all live vehicles",
+        link: "View all active shipments",
         icon: (
-          <CircleIcon
+          <SailingIcon
             className="icon"
             style={{
-              color: "crimson",
-              backgroundColor: "rgba(255,0,0,0.2)",
+              color: "green",
+              backgroundColor: "rgba(0, 128, 0, 0.2)",
             }}
           />
         ),
@@ -48,15 +50,15 @@ const Widget = ({ type }) => {
       break;
     case "income":
       data = {
-        title: "INCOME",
-        isMoney: true,
-        link: "View Income",
+        title: "DELAYS",
+        isMoney: false,
+        link: "View all active delays",
         icon: (
-          <PaidOutlinedIcon
+          <ScheduleIcon
             className="icon"
             style={{
-              color: "green",
-              backgroundColor: "rgba(0, 128, 0, 0.2)",
+              color: "crimson",
+              backgroundColor: "rgba(255,0,0,0.2)",
             }}
           />
         ),

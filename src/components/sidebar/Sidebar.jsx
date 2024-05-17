@@ -21,6 +21,7 @@ import Person2Icon from "@mui/icons-material/Person2";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
+import SailingIcon from "@mui/icons-material/Sailing";
 
 const Sidebar = () => {
   const { dispatch } = useContext(DarkModeContext);
@@ -42,6 +43,10 @@ const Sidebar = () => {
               <span>Dashboard</span>
             </li>
           </Link>
+          <li>
+            <SailingIcon className="icon" />
+            <span>Shipments</span>
+          </li>
           <p className="title">VEHICLE</p>
           <Link to="/trucks" style={{ textDecoration: "none" }}>
             <li>
